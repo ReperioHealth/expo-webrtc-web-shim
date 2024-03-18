@@ -10,7 +10,6 @@ if (typeof window !== "undefined") {
   };
 }
 
-
 const {
   RTCPeerConnection,
   RTCIceCandidate,
@@ -20,8 +19,18 @@ const {
   RTCRtpSender,
   RTCErrorEvent,
   MediaStream,
-  MediaStreamTrack,
-} = window;
+  MediaStreamTrack
+} = (window || {
+  RTCPeerConnection,
+  RTCIceCandidate,
+  RTCSessionDescription,
+  RTCRtpTransceiver,
+  RTCRtpReceiver,
+  RTCRtpSender,
+  RTCErrorEvent,
+  MediaStream,
+  MediaStreamTrack
+});
 
 const { mediaDevices, permissions } = navigator;
 
