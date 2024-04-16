@@ -16,12 +16,6 @@ export default function RTCView({ stream, ...props }) {
   }, [stream, videoRef]);
 
   return (
-    <Video
-      ref={videoRef}
-      autoPlay
-      playsInline
-      style={{ flex: 1 }}
-      {...props}
-    />
+    <Video ref={videoRef} autoPlay playsInline style={{ flex: 1 }} {...props} />
   );
 }

@@ -1,13 +1,13 @@
-import RTCView from './RTCView'
+import RTCView from './RTCView';
 
 if (typeof window !== 'undefined') {
-  window.MediaStream.prototype.release = function release () {
-    this.getTracks().forEach((track) => track.stop())
-  }
+  window.MediaStream.prototype.release = function release() {
+    this.getTracks().forEach((track) => track.stop());
+  };
 
-  window.MediaStreamTrack.prototype._switchCamera = function _switchCamera () {
-    console.warn('_switchCamera is not implemented on web.')
-  }
+  window.MediaStreamTrack.prototype._switchCamera = function _switchCamera() {
+    console.warn('_switchCamera is not implemented on web.');
+  };
 }
 
 const window = window || {
@@ -19,8 +19,8 @@ const window = window || {
   RTCRtpSender,
   RTCErrorEvent,
   MediaStream,
-  MediaStreamTrack
-}
+  MediaStreamTrack,
+};
 
 const {
   RTCPeerConnection,
@@ -31,17 +31,17 @@ const {
   RTCRtpSender,
   RTCErrorEvent,
   MediaStream,
-  MediaStreamTrack
-} = window
+  MediaStreamTrack,
+} = window;
 
-const navigator = navigator || { mediaDevices, permissions }
+const navigator = navigator || { mediaDevices, permissions };
 
-const { mediaDevices, permissions } = navigator
+const { mediaDevices, permissions } = navigator;
 
-function registerGlobals () {
+function registerGlobals() {
   if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
-    window.mediaDevices = navigator.mediaDevices
-    window.permissions = navigator.permissions
+    window.mediaDevices = navigator.mediaDevices;
+    window.permissions = navigator.permissions;
   }
 }
 
@@ -58,5 +58,5 @@ export {
   mediaDevices,
   permissions,
   registerGlobals,
-  RTCView
-}
+  RTCView,
+};
