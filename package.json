@@ -1,13 +1,13 @@
 {
-  "name": "react-native-webrtc-web-shim",
-  "version": "1.0.6",
+  "name": "expo-webrtc-web-shim",
+  "version": "1.0.7-beta.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-native-webrtc/react-native-webrtc-web-shim.git"
+    "url": "git+https://github.com/reperiohealth/expo-webrtc-web-shim.git"
   },
   "description": "A shim for React Native WebRTC to enable support for React Native Web",
   "license": "MIT",
-  "homepage": "https://github.com/react-native-webrtc/react-native-webrtc-web-shim",
+  "homepage": "https://github.com/reperiohealth/expo-webrtc-web-shim",
   "keywords": [
     "react-native",
     "webrtc",

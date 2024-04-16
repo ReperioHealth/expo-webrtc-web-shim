@@ -1,3 +1,5 @@
+This fork of [react-native-webrtc-web-shim](https://github.com/react-native-webrtc/react-native-webrtc-web-shim) fixes an [issue with Metro](https://github.com/react-native-webrtc/react-native-webrtc-web-shim/issues/15). Use `expo-webrtc-web-shim` instead of `react-native-webrtc-web-shim`.
+
 [<img src="https://avatars.githubusercontent.com/u/42463376" alt="React Native WebRTC" style="height: 6em;" />](https://github.com/react-native-webrtc/react-native-webrtc-web-shim)
 
 # React-Native-WebRTC-Web-Shim
@@ -12,8 +14,8 @@ Add support for `react-native-web` to a `react-native-webrtc` app.
 
 Use one of the following preferred package install methods to immediately get going.
 
-**npm:** `npm install react-native-webrtc-web-shim --save`  
-**yarn:** `yarn add react-native-webrtc-web-shim`  
+**npm:** `npm install react-native-webrtc-web-shim --save`
+**yarn:** `yarn add react-native-webrtc-web-shim`
 **pnpm:** `pnpm install react-native-webrtc-web-shim`
 
 ## Extra Required Steps
@@ -56,10 +58,10 @@ You don't need `toURL` as that is handled for you.
 
 ## Community
 
-Come join our [Discourse Community](https://react-native-webrtc.discourse.group/) if you want to discuss any React Native and WebRTC related topics.  
+Come join our [Discourse Community](https://react-native-webrtc.discourse.group/) if you want to discuss any React Native and WebRTC related topics.
 Everyone is welcome and every little helps.
 
 ## Related Projects
 
-Looking for extra functionality coverage?  
+Looking for extra functionality coverage?
 The [react-native-webrtc](https://github.com/react-native-webrtc) organization provides a number of packages which are more than useful when developing Real Time Communication applications.
